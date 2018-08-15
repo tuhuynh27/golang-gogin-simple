@@ -14,7 +14,7 @@ func setupRouter() *gin.Engine {
 		client.GET("/stories", controllers.Show)
 		client.GET("/stories/:id", controllers.Read)
 		client.POST("/stories", controllers.Create)
-		client.PUT("stories/:id", controllers.Update)
+		client.PUT("/stories/:id", controllers.Update)
 		client.DELETE("/stories/:id", controllers.Delete)
 	}
 
